@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Вячеслав Голубев — digital-маркетолог: performance, аналитика, AI-процессы</title>
+<meta name="description" content="Digital-маркетолог: performance, аналитика, AI-процессы. Entertainment, e-commerce, франчайзинг. Бюджеты 10+ млн ₽/мес, сеть 160+ городов. Кейсы с цифрами.">
+<meta property="og:title" content="Вячеслав Голубев — digital-маркетолог">
+<meta property="og:description" content="Performance, аналитика, AI-процессы. Кейсы с цифрами: −74% CPL, ROMI >300%, сеть 160+ городов.">
+<meta property="og:type" content="website">
+<!-- После публикации: заменить USERNAME на реальный логин GitHub и раскомментировать -->
+<!-- <meta property="og:image" content="https://USERNAME.github.io/images/avatar.jpg"> -->
+<style>
+:root{
+  --text:#1c1c1e; --muted:#6e6e73; --hair:#e6e6e8; --bg:#ffffff; --card:#f6f6f7;
+  --accent:#2f54d1;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--text);background:var(--bg);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+section{padding:84px 0}
+section+section{border-top:1px solid var(--hair)}
+h1{font-size:34px;font-weight:600;letter-spacing:-0.02em;line-height:1.2}
+h2{font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-bottom:36px}
+h3{font-size:20px;font-weight:600;letter-spacing:-0.01em}
+.muted{color:var(--muted)}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+img{max-width:100%;display:block}
+
+/* hero */
+.hero{padding:88px 0 72px}
+.hero-grid{display:grid;grid-template-columns:1fr 240px;gap:48px;align-items:start}
+.avatar{width:112px;height:112px;border-radius:50%;object-fit:cover;margin-bottom:24px}
+.hero .sub{font-size:19px;color:var(--muted);margin-top:8px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.chip{font-size:14px;font-weight:500;padding:6px 14px;border-radius:100px;background:var(--card);color:var(--text)}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.btn{display:inline-block;padding:13px 24px;border-radius:10px;font-size:16px;font-weight:500;border:1px solid var(--text);transition:opacity .15s}
+.btn:hover{opacity:.75;text-decoration:none}
+.btn.primary{background:var(--text);color:#fff}
+.btn.ghost{background:transparent;color:var(--text)}
+.vmetrics{display:flex;flex-direction:column}
+.vmetric{padding:16px 0;border-bottom:1px solid var(--hair)}
+.vmetric:first-child{padding-top:4px}
+.vmetric .num{font-size:26px;font-weight:600;letter-spacing:-0.02em;line-height:1.1}
+.vmetric .lbl{font-size:13px;color:var(--muted);margin-top:4px}
+
+/* cases */
+.case{border:1px solid var(--hair);border-radius:14px;padding:26px 28px;margin-bottom:16px}
+.case .tag{display:inline-block;font-size:13px;font-weight:500;padding:4px 12px;border-radius:100px;background:var(--card);color:var(--muted);margin-bottom:14px}
+.case h3{margin-bottom:8px}
+.case .lead{font-size:16px;color:var(--text)}
+.rmetrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0 6px}
+.rmetric{background:var(--card);border-radius:10px;padding:14px}
+.rmetric .num{font-size:20px;font-weight:600;letter-spacing:-0.01em;line-height:1.2}
+.rmetric .num em{font-style:normal;color:var(--accent)}
+.rmetric .lbl{font-size:12.5px;color:var(--muted);margin-top:4px;line-height:1.4}
+details{margin-top:12px}
+summary{cursor:pointer;font-size:15px;font-weight:500;color:var(--accent);list-style:none;display:inline-flex;align-items:center;gap:6px}
+summary::before{content:"+";font-size:17px;font-weight:600}
+details[open] summary::before{content:"−"}
+summary::-webkit-details-marker{display:none}
+details .body{margin-top:14px;font-size:15.5px}
+details dt{font-size:12.5px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;color:var(--muted);margin:14px 0 4px}
+details dd{margin:0}
+details ul{list-style:none}
+details li{padding-left:18px;position:relative;margin-bottom:6px}
+details li::before{content:"—";position:absolute;left:0;color:var(--muted)}
+.strip{margin-top:36px}
+.strip-title{font-size:13px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.strip p{font-size:15px;color:var(--muted);padding:10px 0;border-bottom:1px solid var(--hair)}
+.strip p strong{color:var(--text);font-weight:500}
+
+/* expertise */
+.shot{border:1px solid var(--hair);border-radius:12px;overflow:hidden;margin-top:20px}
+
+/* stack */
+.stack-row{padding:14px 0;border-bottom:1px solid var(--hair);display:flex;gap:16px;font-size:15px}
+.stack-row .k{flex:0 0 130px;font-weight:600;font-size:14px}
+.stack-row .v{color:var(--muted)}
+
+/* consulting */
+.consult{background:var(--card);border-radius:16px;padding:36px}
+.consult h3{margin-bottom:16px}
+.consult ul{list-style:none;margin:10px 0 18px}
+.consult li{padding-left:18px;position:relative;margin-bottom:8px;font-size:16px}
+.consult li::before{content:"—";position:absolute;left:0;color:var(--muted)}
+.quote{border-left:2px solid var(--text);padding:2px 0 2px 18px;margin:22px 0}
+.quote p{font-size:15.5px}
+.quote .who{font-size:13px;color:var(--muted);margin-top:8px}
+
+/* footer */
+footer{padding:56px 0;border-top:1px solid var(--hair);font-size:15px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+@media(max-width:680px){
+  section{padding:60px 0}
+  .hero{padding:56px 0 48px}
+  h1{font-size:28px}
+  .hero-grid{grid-template-columns:1fr;gap:28px}
+  .vmetrics{flex-direction:row;flex-wrap:wrap;gap:0 24px}
+  .vmetric{flex:1 1 40%;border-bottom:1px solid var(--hair)}
+  .rmetrics{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="hero wrap">
+  <div class="hero-grid">
+    <div>
+      <img class="avatar" src="images/avatar.jpg" alt="Вячеслав Голубев">
+      <h1>Вячеслав Голубев</h1>
+      <p class="sub">Digital-маркетолог: performance, аналитика, AI-процессы</p>
+      <div class="chips">
+        <span class="chip">Entertainment</span>
+        <span class="chip">E-commerce</span>
+        <span class="chip">Франчайзинг</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn primary" href="#" title="заменить на ссылку к PDF">Скачать резюме</a>
+        <a class="btn ghost" href="https://t.me/golubew">Написать в Telegram</a>
+      </div>
+    </div>
+    <div class="vmetrics">
+      <div class="vmetric"><div class="num">30+</div><div class="lbl">проектов реализовано</div></div>
+      <div class="vmetric"><div class="num">до 15 чел</div><div class="lbl">управление командой</div></div>
+      <div class="vmetric"><div class="num">10+ млн ₽/мес</div><div class="lbl">управление бюджетами</div></div>
+      <div class="vmetric"><div class="num">160+ городов</div><div class="lbl">сеть развлекательных мероприятий, которую продвигаю</div></div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>Коротко</h2>
+    <p style="font-size:19px;line-height:1.7">Строю системы привлечения клиентов: performance-каналы, сквозная аналитика, AI-конвейеры. Основная сцена — entertainment: международная сеть развлекательных мероприятий в 160+ городах, франшиза из топ-10 Forbes, онлайн-игры и концерты. Знаю обе стороны модели: B2C-продукт с еженедельной частотой покупки и B2B-продажи — франшиза и корпоративные ивенты.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Кейсы</h2>
+
+    <div class="case">
+      <span class="tag">Event-entertainment · франчайзинг · B2C + B2B</span>
+      <h3>Шейкер квиз — международная сеть развлекательных мероприятий</h3>
+      <p class="lead">Три продуктовые линии: регулярный B2C-продукт с еженедельной частотой покупки, корпоративные ивенты и франшиза. Прошёл путь от внешнего консультанта до маркетолога, ведущего продвижение всей сети: ещё на консалтинговом этапе построил автоворонку продажи франшизы, через которую пришла значимая часть партнёров.</p>
+      <div class="rmetrics">
+        <div class="rmetric"><div class="num"><em>−74%</em></div><div class="lbl">стоимость B2B-заявки: с 17 500 до 4 500 ₽ при объёме ×3</div></div>
+        <div class="rmetric"><div class="num">×2</div><div class="lbl">B2C-регистрации год к году при бюджете &lt;×1,5</div></div>
+        <div class="rmetric"><div class="num">70 → 160+</div><div class="lbl">городов сети за время работы с брендом</div></div>
+      </div>
+      <details>
+        <summary>Как это сделано</summary>
+        <div class="body">
+          <dt>Задача</dt>
+          <dd>Масштабировать поток заявок по трём продуктовым линиям без пропорционального роста бюджета.</dd>
+          <dt>Решение</dt>
+          <dd><ul>
+            <li>Пересборка связки «оффер → лендинг → реклама» для франшизы: новое позиционирование, лендинг под сегмент, перезапуск кампаний</li>
+            <li>AI-пайплайн контента: 200+ единиц за 4 часа против ~50 человеко-часов; на его базе — публичные каналы с темпом 20+ в месяц без роста бюджета</li>
+            <li>Сквозная аналитика (Roistat, UTM, CRM) — единый отчёт из десятков источников</li>
+          </ul></dd>
+          <dt>Ещё результат</dt>
+          <dd>Заявки на корпоративы ×3 — с нуля собрана digital-воронка: лендинг, автоворонка, реклама, CRM, рассылки.</dd>
+        </div>
+      </details>
+    </div>
+
+    <div class="case">
+      <span class="tag">Агентский период · 10+ млн ₽/мес</span>
+      <h3>Конвейер клиентских проектов</h3>
+      <p class="lead">До 8 клиентских проектов параллельно в нишах entertainment, e-commerce, образования и других — с воспроизводимым результатом по единому циклу.</p>
+      <div class="rmetrics">
+        <div class="rmetric"><div class="num"><em>&gt;300%</em></div><div class="lbl">ROMI — стабильный KPI по пулу проектов</div></div>
+        <div class="rmetric"><div class="num">&gt;400%</div><div class="lbl">ROAS канала при тратах &gt;1 млн ₽/мес</div></div>
+        <div class="rmetric"><div class="num">×3</div><div class="lbl">рост бюджета портфеля с сохранением KPI</div></div>
+      </div>
+      <details>
+        <summary>Как это сделано</summary>
+        <div class="body">
+          <dt>Механика конвейера</dt>
+          <dd>Единый цикл: брифинг → медиаплан → запуск → аналитика → масштабирование. Для ниш со спецификой цикл адаптировался — например, в благотворительном фандрайзинге: лендинги с платёжными системами и трафик напрямую на страницы сборов.</dd>
+          <dt>Основа масштабирования</dt>
+          <dd>100+ протестированных гипотез роста — победители тиражировались на весь пул.</dd>
+        </div>
+      </details>
+    </div>
+
+    <div class="case">
+      <span class="tag">Event-entertainment · топ-10 франшиз Forbes</span>
+      <h3>Ruda Games — франчайзинговая сеть «Мозгобойня»</h3>
+      <p class="lead">Система работы с платным трафиком: от структуры рекламных кабинетов до единого дашборда платной закупки, собранного вместе с таргетологом и разработчиками.</p>
+      <div class="rmetrics">
+        <div class="rmetric"><div class="num"><em>до ×12</em></div><div class="lbl">окупаемость: ROAS по кампаниям от 124% до 1207%</div></div>
+        <div class="rmetric"><div class="num">×2</div><div class="lbl">рекламный бюджет при стоимости заявки −50%</div></div>
+        <div class="rmetric"><div class="num">10 000+</div><div class="lbl">привлечённых игроков</div></div>
+      </div>
+    </div>
+
+    <div class="strip">
+      <p class="strip-title">Ещё проекты</p>
+      <p><strong>PartyStore</strong>, магазин онлайн-игр — ×9 рост новых пользователей с сохранением CAC (автоворонка через чат-бот с бесплатной игрой)</p>
+      <p><strong>Онлайн-школа «99 баллов»</strong> — &gt;50 000 лидов в рамках KPI, реанимирован канал контекстной рекламы</p>
+      <p><strong>Онлайн-школа удалённой профессии</strong> — выручка +70%, новая воронка продаж с ROMI &gt;150%</p>
+      <p><strong>«Слушай Сюда»</strong> (Юрий Бардаш) — 100 000+ прослушиваний релизов через посевы и таргет</p>
+      <p><strong>Концерты Masha Hima, MURDA KILLA</strong> и других в Москве и СПб — 3000+ привлечённых гостей</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Экспертность</h2>
+    <p><strong>Преподавание.</strong> Спикер курса «Профессия Digital-маркетолог» в школе О'Смысле: модуль «Таргетированная и контекстная реклама», 5 потоков, 150+ студентов.</p>
+    <div class="shot"><img src="images/osmisle.jpg" alt="Страница преподавателей курса «Профессия Digital-маркетолог» школы О'Смысле — Вячеслав Голубев среди спикеров" loading="lazy"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Стек</h2>
+    <div class="stack-row"><span class="k">Аналитика</span><span class="v">Roistat, Яндекс Метрика, Google Analytics, Power BI, сквозная аналитика и UTM; CPL, CAC, LTV, ROMI, ROAS, юнит-экономика</span></div>
+    <div class="stack-row"><span class="k">Реклама</span><span class="v">Яндекс.Директ, VK Реклама, Telegram Ads, посевы; ранее — Google Ads, FB Ads</span></div>
+    <div class="stack-row"><span class="k">Воронки</span><span class="v">Tilda, автоворонки и чат-боты (Senler), email- и CRM-маркетинг, A/B-тесты</span></div>
+    <div class="stack-row"><span class="k">Инструменты</span><span class="v">Figma, Photoshop, Notion, Miro, Google Sheets</span></div>
+    <div class="stack-row"><span class="k">AI-стек</span><span class="v">ChatGPT, Claude, Gemini, NotebookLM, Midjourney — в ежедневных процессах, от аналитики до генерации контента</span></div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="wrap">
+    <span>Вячеслав Голубев</span>
+    <span><a href="consulting.html">Консалтинг для event-проектов</a> · <a href="https://t.me/golubew">Telegram</a> · <a href="mailto:golubew@mail.ru">golubew@mail.ru</a> · <a href="https://www.linkedin.com/in/golubevv">LinkedIn</a></span>
+  </div>
+</footer>
+
+<!-- Яндекс.Метрика: после создания счётчика вставить код сюда, перед </body> -->
+
+</body>
+</html>
